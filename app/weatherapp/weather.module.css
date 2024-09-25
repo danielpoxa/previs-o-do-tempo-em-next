@@ -1,0 +1,115 @@
+.weatherContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.defaultGradient {
+    background: linear-gradient(135deg, #73c8a9, #f5d78e, #667db6, #0082c8, #d7d2cc, #304352, #83a4d4, #b6fbff, #373b44, #4286f4);
+}
+
+.clear {
+    background: linear-gradient(135deg, #73c8a9, #f5d78e);
+}
+
+.rain {
+    background: linear-gradient(135deg, #667db6, #0082c8);
+}
+
+.cloudy {
+    background: linear-gradient(135deg, #d7d2cc, #304352);
+}
+
+.snow {
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+}
+
+.thunderstorm {
+    background: linear-gradient(135deg, #373b44, #4286f4);
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cityInput {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.fetchButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #373b44;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fetchButton:hover {
+    background-color: #e0f7fa;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.cityName {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.weatherIcon {
+    width: 100px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.mapButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.mapButton:hover {
+    background-color: #45a049;
+}
+
+.temperature {
+    font-size: 2rem;
+}
+
+.description, .windSpeed {
+    font-size: 1.8rem;
+}
+
+.forecastTitle {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.forecastChart {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px 0;
+}

@@ -1,0 +1,31 @@
+/* app/components/header/header.module.css */
+.header {
+    background: linear-gradient(135deg, #73c8a9, #373b44);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navItem {
+    color: #e0f7fa;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navItem:hover {
+    color: #fff;
+}

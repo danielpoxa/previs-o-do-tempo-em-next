@@ -44,6 +44,13 @@ export default function Home() {
           >
             Read our docs
           </a>
+          {/* New button for Previsão do Tempo */}
+          <a
+            href="/weatherapp"
+            className={styles.primary}
+          >
+            Previsão do Tempo
+          </a>
         </div>
       </main>
       <footer className={styles.footer}>

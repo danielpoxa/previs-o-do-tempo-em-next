@@ -1,0 +1,12 @@
+/* app/components/footer/footer.module.css */
+.footer {
+    background: #373b44;
+    color: #e0f7fa;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
