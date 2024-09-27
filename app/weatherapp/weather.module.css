@@ -1,17 +1,19 @@
+/* Weather Container */
 .weatherContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 50px); /* Ajustando altura para considerar cabeçalho e rodapé */
     padding: 20px;
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
 }
 
 .defaultGradient {
-    background: linear-gradient(135deg, #73c8a9, #f5d78e, #667db6, #0082c8, #d7d2cc, #304352, #83a4d4, #b6fbff, #373b44, #4286f4);
+    background: linear-gradient(135deg, #667db6, #0082c8, #d7d2cc, #304352, #83a4d4, #b6fbff, #373b44, #4286f4);
 }
 
 .clear {
@@ -35,9 +37,10 @@
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
+    
 }
 
 .cityInput {
@@ -46,6 +49,9 @@
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
+
+
+    
 }
 
 .fetchButton {
@@ -105,11 +111,65 @@
 
 .forecastTitle {
     font-size: 2rem;
-    margin-top: 30px;
+    margin-top: 10px;
+    
+    
+    
+    
+    
 }
 
 .forecastChart {
-    width: 80%;
-    max-width: 700px;
-    margin: 20px 0;
+    width: 100%;
+    max-width: 450px;
+    margin: 30px 0;
+    position: relative;
+    right: 0%;
+    left: 0%;
+    background-color: aliceblue;
+    background-size: 100%;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #73c8a9, #373b44);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navItem {
+    color: #e0f7fa;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navItem:hover {
+    color: #fff;
+}
+
+/* Footer Styles */
+.footer {
+    background: #374439;
+    color: #e0f7fa;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }

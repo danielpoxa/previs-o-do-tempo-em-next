@@ -58,8 +58,8 @@ export default function WeatherPage() {
         if (description.includes("rain")) return "/icons8-chuva-50.png";
         if (description.includes("cloud")) return "/icons8-nublado-80.png";
         if (description.includes("snow")) return "/icons8-neve-80.png";
-        if (description.includes("thunderstorm")) return "/icons8-com-relâmpago-echuva-48.png";
-        return "/icons/default.svg"; 
+        if (description.includes("thunderstorm")) return "/icons8-nuvem-com-relâmpagos-e-chuva-48.png";
+        return "/icons8-nuvem-com-relâmpagos-e-chuva-48.png"; 
     };
 
     const getBackgroundClass = (description) => {
@@ -76,11 +76,11 @@ export default function WeatherPage() {
     };
 
     const getTemperatureClass = (description) => {
-        if (description.includes("clear")) return styles.clearText;
-        if (description.includes("rain")) return styles.rainText;
-        if (description.includes("cloud")) return styles.cloudyText;
-        if (description.includes("snow")) return styles.snowText;
-        if (description.includes("thunderstorm")) return styles.thunderstormText;
+        if (description.includes("clear")) return styles.clear;
+        if (description.includes("rain")) return styles.rain;
+        if (description.includes("cloud")) return styles.cloudy;
+        if (description.includes("snow")) return styles.snow;
+        if (description.includes("thunderstorm")) return styles.thunderstorm;
         return ""; 
     };
 
